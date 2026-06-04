@@ -6,7 +6,7 @@
       "key": "reserve",
       "source_url": "https://reserve.kamakura-chokin.com/lp01/",
       "source_sha256": "5ee9825797ce7fed9683d5d52993fee59c0c48d4b31ced3ba73ec369f7542eda",
-      "output_sha256": "4140d17c78e7c94b1b449a174ed253a15b1bb395b567cefc8fa02cc4bf498f3b",
+      "output_sha256": "0f3bfbca5f5bfb71b8a08e4b42a4e4bc958a99e859cc9e60057f01adef5a224d",
       "source_bytes": 130626,
       "output_bytes": 154672,
       "cta_count_source": 7,
@@ -23,7 +23,7 @@
       "key": "reserve02",
       "source_url": "https://reserve02.kamakura-chokin.com/lp01/",
       "source_sha256": "7e46f14f99efcba53105ab0cda1a6eeaf56bb2a6c6194da10593525e25854984",
-      "output_sha256": "3eae096a6d83431ed2fd810e73856d15bf63c504fccb3ec57d745a13d98bc7b4",
+      "output_sha256": "5a31bf0ea3ebe6df09a05e69376d3bc5c3347f2d410e01cc53af522699b2b2d9",
       "source_bytes": 127920,
       "output_bytes": 151854,
       "cta_count_source": 6,
@@ -135,5 +135,45 @@
       "Calendar and cancel-notice API responses are preview mocks because the production endpoints do not expose CORS for GitHub Pages.",
       "Final reservation submit is intentionally blocked in preview to avoid creating test reservations; production must keep the current submit behavior."
     ]
+  },
+  "visual_qa_after_subagents": {
+    "checked_at_jst": "2026-06-04",
+    "subagent_findings_before_fix": [
+      "published preview CSS URL quoting broke LP layout rules, causing desktop width/centering and section card layout regressions",
+      "mobile preview had horizontal overflow before fix",
+      "reserve02 preview hero image asset did not match latest current LP hero"
+    ],
+    "fixes_applied": [
+      "restored malformed CSS url(...) quotes in base.css, style.css, and parts.css for both reserve and reserve02",
+      "kept width/height image attributes but scoped height:auto to .lp img[width][height] so layout remains unchanged",
+      "regenerated reserve and reserve02 FV JPG/WebP/AVIF assets from the latest live /img/lp01/fv.jpg files"
+    ],
+    "post_fix_visual_metrics_local_preview": [
+      {
+        "page": "reserve",
+        "viewport": "desktop 1440x1200",
+        "full_page_diff_pct": 1.2261,
+        "top_viewport_diff_pct": 0.0003
+      },
+      {
+        "page": "reserve",
+        "viewport": "mobile 390x1200",
+        "full_page_diff_pct": 8.5445,
+        "top_viewport_diff_pct": 0
+      },
+      {
+        "page": "reserve02",
+        "viewport": "desktop 1440x1200",
+        "full_page_diff_pct": 0.3326,
+        "top_viewport_diff_pct": 0.0001
+      },
+      {
+        "page": "reserve02",
+        "viewport": "mobile 390x1200",
+        "full_page_diff_pct": 8.7483,
+        "top_viewport_diff_pct": 0
+      }
+    ],
+    "key_layout_result": "Main LP section positions, widths, and heights match the current LP after the fix for FV/sec02/sec03/sec04/video/sec05/sec06/sec07/reservation on both desktop and mobile. Remaining full-page differences are concentrated around preview-only reservation behavior and lazy-loaded image capture timing."
   }
 }

@@ -155,13 +155,13 @@
 
   .img__slide .slick-prev {
     left: -10%;
-    background: url('https://reserve.kamakura-chokin.com/img/lp01/icon-prev.png);
+    background: url('https://reserve.kamakura-chokin.com/img/lp01/icon-prev.png');
     background-size: cover;
   }
 
  .img__slide .slick-next {
     right:-10%;
-    background: url('https://reserve.kamakura-chokin.com/img/lp01/icon-next.png);
+    background: url('https://reserve.kamakura-chokin.com/img/lp01/icon-next.png');
     background-size: cover;
   }
 
@@ -170,7 +170,7 @@
 .lp-sec01 {
     padding: 4% 0 10.67%;
     background: #f4f2ec;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section01.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section01.png');
     background-size: 100% auto;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -235,7 +235,7 @@
 .lp-sec03 {
     padding: 17.33% 0 13.33%;
     background: #f4f2ec;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section02.png),url('https://reserve.kamakura-chokin.com/img/lp01/bg-section03.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section02.png'),url('https://reserve.kamakura-chokin.com/img/lp01/bg-section03.png');
     background-size: 100% auto ,100% auto;
     background-position: top center, bottom center;
     background-repeat: no-repeat,no-repeat;
@@ -272,27 +272,27 @@
 }
 
 .lp-sec03 .point.-p01::before {
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point01.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point01.png');
 }
 
 .lp-sec03 .point.-p02::before {
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point02.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point02.png');
 }
 
 .lp-sec03 .point.-p03::before {
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point03.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point03.png');
 }
 
 .lp-sec03 .point.-p04::before {
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point04.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point04.png');
 }
 
 .lp-sec03 .point.-p05::before {
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point05.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point05.png');
 }
 
 .lp-sec03 .point.-p06::before {
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point06.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec03-point06.png');
 }
 
 .lp-sec03 .point .heading {
@@ -347,7 +347,7 @@
 /* sec04 */
 .lp-sec04 {
     padding: 0 0 12%;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section04.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section04.png');
     background-size: 100% auto;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -371,7 +371,7 @@
     width: 87px;
     height: 26px;
     margin: 0 auto;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec04-icon-arrow.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec04-icon-arrow.png');
     background-size: 100% 100%;
 }
 
@@ -523,7 +523,7 @@
 /* sec06 */
 .lp-sec06 {
     padding: 17.33% 0 13.33%;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section05.png),url('https://reserve.kamakura-chokin.com/img/lp01/bg-section06.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section05.png'),url('https://reserve.kamakura-chokin.com/img/lp01/bg-section06.png');
     background-size: 100% auto ,100% auto;
     background-position: top center, bottom center;
     background-repeat: no-repeat,no-repeat;
@@ -569,7 +569,7 @@
 .lp-sec07 {
     padding: 6.67% 0 18.67%;
     background: #ece9e2;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section07.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/bg-section07.png');
     background-size: 100% auto;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -596,7 +596,7 @@
     width: 49px;
     height: 34px;
     margin: 0 auto;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec07-icon-title.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec07-icon-title.png');
     background-size: 100% 100%;
 }
 
@@ -620,7 +620,7 @@
     left: 0;
     width: 29px;
     height: 29px;
-    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec07-icon-q.png);
+    background-image: url('https://reserve.kamakura-chokin.com/img/lp01/sec07-icon-q.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

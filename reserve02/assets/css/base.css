@@ -168,12 +168,12 @@ header.header {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url('https://reserve02.kamakura-chokin.com/img/common/btn-nav-menu.png);
+    background-image: url('https://reserve02.kamakura-chokin.com/img/common/btn-nav-menu.png');
     background-size: cover;
     transition: all 0.2s ease-in-out;
 }
 #drawer-checkbox:checked ~ #drawer-icon span {
-    background-image: url('https://reserve02.kamakura-chokin.com/img/common/btn-nav-close.png);
+    background-image: url('https://reserve02.kamakura-chokin.com/img/common/btn-nav-close.png');
 }
 #drawer-content {
     visibility: hidden;
@@ -276,7 +276,7 @@ header.header {
     bottom: 17%;
     width: 20px;
     height: 20px;
-    background-image: url('https://reserve02.kamakura-chokin.com/img/common/icon-link-arrow03.png);
+    background-image: url('https://reserve02.kamakura-chokin.com/img/common/icon-link-arrow03.png');
     background-size: 100% 100%;
 }
 .gNav__titleEn {
@@ -306,7 +306,7 @@ header.header {
     left: 0;
     width: 15px;
     height: 7px;
-    background-image: url('https://reserve02.kamakura-chokin.com/img/common/icon-link-arrow.png);
+    background-image: url('https://reserve02.kamakura-chokin.com/img/common/icon-link-arrow.png');
     background-size: 100% 100%;
 }
 .gNav__sns {
@@ -409,7 +409,7 @@ header.header {
     right: 5.53%;
     width: 8px;
     height: 12px;
-    background-image: url('https://reserve02.kamakura-chokin.com/img/common/icon-btn-arrow.png);
+    background-image: url('https://reserve02.kamakura-chokin.com/img/common/icon-btn-arrow.png');
     background-size: 100% 100%;
 }
 .footer__btn {
