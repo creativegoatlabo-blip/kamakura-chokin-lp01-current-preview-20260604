@@ -1,0 +1,139 @@
+{
+  "generated_at_jst": "2026-06-04T09:14:03+09:00",
+  "repository": "creativegoatlabo-blip/kamakura-chokin-lp01-current-preview-20260604",
+  "source_pages": [
+    {
+      "key": "reserve",
+      "source_url": "https://reserve.kamakura-chokin.com/lp01/",
+      "source_sha256": "5ee9825797ce7fed9683d5d52993fee59c0c48d4b31ced3ba73ec369f7542eda",
+      "output_sha256": "4140d17c78e7c94b1b449a174ed253a15b1bb395b567cefc8fa02cc4bf498f3b",
+      "source_bytes": 130626,
+      "output_bytes": 154672,
+      "cta_count_source": 7,
+      "cta_count_output": 10,
+      "images_source": 81,
+      "images_output": 81,
+      "scripts_source": 16,
+      "scripts_output": 6,
+      "contains_tokyo_campaign": true,
+      "contains_osaka_copy": true,
+      "vue_click_attrs": 30
+    },
+    {
+      "key": "reserve02",
+      "source_url": "https://reserve02.kamakura-chokin.com/lp01/",
+      "source_sha256": "7e46f14f99efcba53105ab0cda1a6eeaf56bb2a6c6194da10593525e25854984",
+      "output_sha256": "3eae096a6d83431ed2fd810e73856d15bf63c504fccb3ec57d745a13d98bc7b4",
+      "source_bytes": 127920,
+      "output_bytes": 151854,
+      "cta_count_source": 6,
+      "cta_count_output": 9,
+      "images_source": 79,
+      "images_output": 79,
+      "scripts_source": 16,
+      "scripts_output": 6,
+      "contains_tokyo_campaign": false,
+      "contains_osaka_copy": true,
+      "vue_click_attrs": 30
+    }
+  ],
+  "preview_safety": {
+    "robots": "noindex,nofollow",
+    "production_analytics": "disabled; no GTM/GA network script is loaded",
+    "form_submission": "blocked in preview after validation; production should keep existing native submit behavior",
+    "calendar_and_cancel_notice": "mocked through preview-only axios adapter because production endpoint does not expose CORS for GitHub Pages"
+  },
+  "implemented_changes": [
+    "meta description / canonical / OGP / Twitter card added per source host",
+    "WebPage / JewelryStore / Service / FAQPage JSON-LD added from latest visible page content",
+    "image-heading sr-only text added without changing visible layout",
+    "image src normalized, width/height/loading/decoding/alt attributes added",
+    "FV image converted to responsive picture using AVIF/WebP/JPG assets from the unchanged 750x1000 hero image",
+    "FV preload and fetchpriority added",
+    "reservation JS/CSS and slider JS lazy-loaded with direct #reservation support",
+    "Google Fonts preload/preconnect normalized and CSS @import removed",
+    "user-scalable=no removed from viewport",
+    "preview-only CTA/reservation/cancel/complete event hooks added without production GTM/GA send",
+    "target=_blank rel=noopener, iframe title, aria labels, v-cloak, focus-visible support added"
+  ],
+  "reserve_vs_reserve02_handling": [
+    {
+      "area": "primary_copy",
+      "reserve": "鎌倉・横浜・東京蔵前の観光導線を保持",
+      "reserve02": "大阪市北区中崎町の散策導線を保持",
+      "handling": "文言は統合せず各LPの最新HTMLを維持"
+    },
+    {
+      "area": "campaign_cta",
+      "reserve": "東京蔵前店オープン記念キャンペーンCTAあり",
+      "reserve02": "該当CTAなし",
+      "handling": "reserveのみに改善属性を付与"
+    },
+    {
+      "area": "shop4_campaign",
+      "reserve": "shop-kuramae-campaign とリボン/期間表示あり",
+      "reserve02": "通常の東京蔵前店舗カード",
+      "handling": "CSSも最新状態を保持"
+    },
+    {
+      "area": "form_action",
+      "reserve": "本番は '/reserves/add/?shop_id='+shopId",
+      "reserve02": "本番は 'https://reserve.kamakura-chokin.com/reserves/add/?shop_id='+shopId",
+      "handling": "プレビューでは送信ブロック。本番反映時は現行式を維持"
+    },
+    {
+      "area": "cancel_notice_tracking",
+      "reserve": "dataLayer push is commented out",
+      "reserve02": "dataLayer push active in source",
+      "handling": "プレビューではGTM/GA未読込のdataLayer記録のみ"
+    }
+  ],
+  "qa_results": {
+    "static_checks": [
+      "no production GTM/GA network script",
+      "noindex,nofollow present",
+      "canonical differs by source host",
+      "JSON-LD parses",
+      "all img tags have alt/width/height/loading/decoding",
+      "target=_blank links include noopener",
+      "Vue @click attributes preserved in source"
+    ],
+    "browser_checks": [
+      {
+        "page": "reserve",
+        "result": "OK",
+        "checked": [
+          "initial render",
+          "CTA to #reservation",
+          "direct #reservation app load",
+          "shop select",
+          "course select",
+          "mock calendar event load",
+          "time select",
+          "cancel notice modal opens",
+          "required fields can reach confirmation attempt without visible errors",
+          "preview blocks native submit"
+        ]
+      },
+      {
+        "page": "reserve02",
+        "result": "OK",
+        "checked": [
+          "initial render",
+          "no top campaign CTA",
+          "Osaka copy retained",
+          "no Kuramae campaign class",
+          "direct #reservation app load",
+          "Osaka shop select",
+          "course select",
+          "mock calendar event load",
+          "time select"
+        ]
+      }
+    ],
+    "known_preview_limits": [
+      "Calendar and cancel-notice API responses are preview mocks because the production endpoints do not expose CORS for GitHub Pages.",
+      "Final reservation submit is intentionally blocked in preview to avoid creating test reservations; production must keep the current submit behavior."
+    ]
+  }
+}
