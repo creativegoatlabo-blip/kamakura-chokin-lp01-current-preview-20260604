@@ -6,9 +6,9 @@
       "key": "reserve",
       "source_url": "https://reserve.kamakura-chokin.com/lp01/",
       "source_sha256": "5ee9825797ce7fed9683d5d52993fee59c0c48d4b31ced3ba73ec369f7542eda",
-      "output_sha256": "0f3bfbca5f5bfb71b8a08e4b42a4e4bc958a99e859cc9e60057f01adef5a224d",
+      "output_sha256": "eb6673334995f520a6261b7ded949406983cee699e97db35bba6c2c8e17e8951",
       "source_bytes": 130626,
-      "output_bytes": 154672,
+      "output_bytes": 154730,
       "cta_count_source": 7,
       "cta_count_output": 10,
       "images_source": 81,
@@ -23,9 +23,9 @@
       "key": "reserve02",
       "source_url": "https://reserve02.kamakura-chokin.com/lp01/",
       "source_sha256": "7e46f14f99efcba53105ab0cda1a6eeaf56bb2a6c6194da10593525e25854984",
-      "output_sha256": "5a31bf0ea3ebe6df09a05e69376d3bc5c3347f2d410e01cc53af522699b2b2d9",
+      "output_sha256": "57564b5c19ac4348d1de24df22e5ea181726b5a4204c3c29178ce7e8ec589642",
       "source_bytes": 127920,
-      "output_bytes": 151854,
+      "output_bytes": 151912,
       "cta_count_source": 6,
       "cta_count_output": 9,
       "images_source": 79,
@@ -175,5 +175,42 @@
       }
     ],
     "key_layout_result": "Main LP section positions, widths, and heights match the current LP after the fix for FV/sec02/sec03/sec04/video/sec05/sec06/sec07/reservation on both desktop and mobile. Remaining full-page differences are concentrated around preview-only reservation behavior and lazy-loaded image capture timing."
+  },
+  "visual_qa_after_user_screenshot": {
+    "checked_at_jst": "2026-06-04",
+    "finding": "Reservation shop photos in the preview were vertically stretched because width/height attributes affected #app .shop-image img.",
+    "fix": "Added a scoped CSS override: .page-reserves .shop-image img[width][height]{height:auto}.",
+    "verified_mobile_390": [
+      {
+        "page": "reserve02",
+        "current_shop_image_sizes": [
+          "95x95",
+          "81.2x81.2",
+          "95x95",
+          "84x84"
+        ],
+        "preview_shop_image_sizes_after_fix": [
+          "95x95",
+          "81.2x81.2",
+          "95x95",
+          "84x84"
+        ]
+      },
+      {
+        "page": "reserve",
+        "current_shop_image_sizes": [
+          "95x95",
+          "81.2x81.2",
+          "95x95",
+          "95x95"
+        ],
+        "preview_shop_image_sizes_after_fix": [
+          "95x95",
+          "81.2x81.2",
+          "95x95",
+          "95x95"
+        ]
+      }
+    ]
   }
 }
