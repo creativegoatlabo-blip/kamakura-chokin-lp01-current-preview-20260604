@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>鎌倉彫金工房 LP01 本番反映用 差分資料</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;line-height:1.75;margin:28px;color:#222}
+    main{max-width:1040px;margin:auto}
+    table{border-collapse:collapse;width:100%;margin:16px 0}
+    th,td{border:1px solid #ddd;padding:8px;vertical-align:top}
+    th{background:#f4f2ec;text-align:left}
+    code{word-break:break-all}
+    .note{background:#fff7df;border-left:4px solid #b8902f;padding:12px}
+  </style>
+</head>
+<body><main>
+  <h1>鎌倉彫金工房 LP01 本番反映用 差分資料</h1>
+  <p class="note">これはPHPファイルではなく、現行のレンダリング済みHTMLと改善プレビューHTMLの差分です。本番ではPHPテンプレート/既存JS/CSSへ移植してください。</p>
+  <h2>差分ファイル</h2>
+  <table><thead><tr><th>対象</th><th>見やすい整形diff</th><th>生HTML diff</th><th>規模</th></tr></thead><tbody>
+  <tr><td>reserve</td><td><a href="reserve-current-vs-preview.pretty.diff">reserve-current-vs-preview.pretty.diff</a></td><td><a href="reserve-current-vs-preview.raw.diff">reserve-current-vs-preview.raw.diff</a></td><td>+196 / -204 / 43 hunks</td></tr><tr><td>reserve02</td><td><a href="reserve02-current-vs-preview.pretty.diff">reserve02-current-vs-preview.pretty.diff</a></td><td><a href="reserve02-current-vs-preview.raw.diff">reserve02-current-vs-preview.raw.diff</a></td><td>+193 / -200 / 42 hunks</td></tr>
+  </tbody></table>
+  <h2>本番に入れてほしいもの</h2>
+  <ul><li>meta description, canonical, OGP, Twitter card</li><li>JSON-LD: WebPage, JewelryStore, Service, FAQPage</li><li>sr-only text for image headings</li><li>image alt, width, height, loading, decoding attributes with CSS guards that preserve current visual sizing</li><li>FV picture sources and preload/fetchpriority using latest current FV assets</li><li>deferred loading hooks for reservation JS/CSS and slider JS, if compatible with production behavior</li><li>accessibility helpers: noopener, iframe title, aria/focus-visible/v-cloak support</li><li>dataLayer-compatible event hooks connected only through production-approved GTM/GA setup</li></ul>
+  <h2>本番に入れないもの</h2>
+  <ul><li>noindex,nofollow preview robots setting</li><li>GitHub Pages preview favicon</li><li>preview-only API mocks for calendar/cancel notification</li><li>preview-only native form submit block</li><li>comments/scripts whose only purpose is disabling production analytics in preview</li></ul>
+  <h2>JSON</h2>
+  <p><a href="diff-summary.json">diff-summary.json</a></p>
+</main></body></html>

@@ -1,0 +1,75 @@
+{
+  "generated_at_jst": "2026-06-05",
+  "note": "Diffs compare the latest rendered production HTML against the GitHub Pages preview HTML. Production should port the semantic/performance changes into PHP/templates instead of replacing PHP wholesale. Preview-only noindex, mock API, and submit blocking are not for production.",
+  "pages": [
+    {
+      "key": "reserve",
+      "label": "reserve",
+      "currentUrl": "https://reserve.kamakura-chokin.com/lp01/",
+      "currentFile": "/tmp/lp01-reserve-current-20260605.html",
+      "previewFile": "/tmp/kamakura-chokin-lp01-current-preview-20260604/reserve/index.html",
+      "previewUrl": "https://creativegoatlabo-blip.github.io/kamakura-chokin-lp01-current-preview-20260604/reserve/?v=9c3cacd",
+      "currentSha256": "5ee9825797ce7fed9683d5d52993fee59c0c48d4b31ced3ba73ec369f7542eda",
+      "previewSha256": "eb6673334995f520a6261b7ded949406983cee699e97db35bba6c2c8e17e8951",
+      "currentBytes": 130626,
+      "previewBytes": 154730,
+      "raw": {
+        "added": 153,
+        "removed": 173,
+        "hunks": 31,
+        "lines": 636
+      },
+      "pretty": {
+        "added": 196,
+        "removed": 204,
+        "hunks": 43,
+        "lines": 855
+      },
+      "rawFile": "reserve-current-vs-preview.raw.diff",
+      "prettyFile": "reserve-current-vs-preview.pretty.diff"
+    },
+    {
+      "key": "reserve02",
+      "label": "reserve02",
+      "currentUrl": "https://reserve02.kamakura-chokin.com/lp01/",
+      "currentFile": "/tmp/lp01-reserve02-current-20260605.html",
+      "previewFile": "/tmp/kamakura-chokin-lp01-current-preview-20260604/reserve02/index.html",
+      "previewUrl": "https://creativegoatlabo-blip.github.io/kamakura-chokin-lp01-current-preview-20260604/reserve02/?v=9c3cacd",
+      "currentSha256": "7e46f14f99efcba53105ab0cda1a6eeaf56bb2a6c6194da10593525e25854984",
+      "previewSha256": "57564b5c19ac4348d1de24df22e5ea181726b5a4204c3c29178ce7e8ec589642",
+      "currentBytes": 127920,
+      "previewBytes": 151912,
+      "raw": {
+        "added": 151,
+        "removed": 170,
+        "hunks": 30,
+        "lines": 624
+      },
+      "pretty": {
+        "added": 193,
+        "removed": 200,
+        "hunks": 42,
+        "lines": 840
+      },
+      "rawFile": "reserve02-current-vs-preview.raw.diff",
+      "prettyFile": "reserve02-current-vs-preview.pretty.diff"
+    }
+  ],
+  "production_include": [
+    "meta description, canonical, OGP, Twitter card",
+    "JSON-LD: WebPage, JewelryStore, Service, FAQPage",
+    "sr-only text for image headings",
+    "image alt, width, height, loading, decoding attributes with CSS guards that preserve current visual sizing",
+    "FV picture sources and preload/fetchpriority using latest current FV assets",
+    "deferred loading hooks for reservation JS/CSS and slider JS, if compatible with production behavior",
+    "accessibility helpers: noopener, iframe title, aria/focus-visible/v-cloak support",
+    "dataLayer-compatible event hooks connected only through production-approved GTM/GA setup"
+  ],
+  "production_exclude": [
+    "noindex,nofollow preview robots setting",
+    "GitHub Pages preview favicon",
+    "preview-only API mocks for calendar/cancel notification",
+    "preview-only native form submit block",
+    "comments/scripts whose only purpose is disabling production analytics in preview"
+  ]
+}
